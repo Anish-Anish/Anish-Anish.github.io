@@ -1,19 +1,413 @@
 <!DOCTYPE html>
-<html>
-<body>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<h2>HTML Forms</h2>
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/developer.png" type="image/x-icon">
+        
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-<form action="/action_page.php">
-  <label for="fname">First name:</label><br>
-  <input type="text" id="fname" name="fname" value="John"><br>
-  <label for="lname">Last name:</label><br>
-  <input type="text" id="lname" name="lname" value="Doe"><br><br>
-  <input type="submit" value="Submit">
-</form> 
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+        <title>Anish-CSE</title>
+    </head>
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="profile container">
+            <!-- Theme button -->
+            <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-</body>
+            <div class="profile__container grid">
+                <div class="profile__data">
+                    <div class="profile__border">
+                        <div class="profile__perfil">
+                           
+<!-- ------- -->            <img class="photo" src="assets/img/anish1.png" alt=""> 
+                        </div>
+                    </div>
+
+                    <h2 class="profile__name">Anish</h2>
+                    <h3 class="profile__profession">Computer Science And Engineering</h3>
+                    <h3 class="profile__profession">Developer</h3>
+
+                    <ul class="profile__social">
+                        <a href="https://instagram.com/thi_dark_sun" target="_blank" class="profile__social-link">
+                            <i class="fa-brands fa-square-instagram fa-bounce" style="color: #d23a95;"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/anish-v-066b4420b/" target="_blank" class="profile__social-link">
+                            <i class="fa-brands fa-linkedin fa-bounce" style="color: #1d78ee;"></i>
+                        </a>
+                        <a href="https://github.com/Anish-Anish" target="_blank" class="profile__social-link">
+                            <i class="fa-brands fa-github fa-bounce" style="color: #6a0fd3;"></i>
+                        </a>
+                        <a  href="https://www.hackerrank.com/anishiv2002?hr_r=1" target="_blank" class="profile__social-link"> 
+                            <!-- <i class="fa-brands fa-hackerrank"></i> -->
+                            <!-- <i class="fa-brands fa-hackerrank fa-beat" style="color: #000000;"></i> -->
+                            <i class="fa-brands fa-hackerrank fa-bounce" style="color: #1b883a;"></i>
+                        </a>
+                       
+                        
+                    </ul>
+                </div>
+
+                <div class="profile__info ">
+                   
+                    <div class="profile__info-group">
+                        <h3 class="profile__info-number">9</h3>
+                        <p class="profile__info-description">
+                            Completed <br> projects
+                        </p>
+                    </div>
+                    
+                </div>
+
+                <div class="profile__buttons">
+                   
+                    <a download="" href="https://drive.google.com/drive/folders/11DTvYX037LVXvHGHqQmYnK3D2NsgIx76" class="button">
+                        Download CV <i class="ri-download-line"></i>
+                    </a>
+
+                    <div class="profile__buttons-small">
+                       
+                        <a href="https://api.whatsapp.com/send?phone=7904259235&text=Hello Anish, I'm :  !" target="_blank" class="button button__small button__gray">
+                            <i class="ri-whatsapp-line"></i>
+                        </a>
+                       
+                        <a href="mailto:anishiv2002@gmail.com" target="_blank" class="button button__small button__gray">
+                            <i class="fa-regular fa-envelope"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!--=============== MAIN ===============-->
+        <main class="main">
+            <section class="filters container">
+                <!--=============== FILTERS TABS ===============-->
+                <ul class="filters__content">
+                    <button onclick="changea()" id = "aboutbtn" class="filters__button" data-target="#">
+                        About
+                     </button>
+                    <button onclick="changep()" id="projectbtn" class="filters__button filter-tab-active" data-target="#projects">
+                        Projects
+                    </button>
+                    <button onclick="changes()" id = "skillbtn" class="filters__button" data-target="#skills">
+                        Skills
+                    </button>
+                </ul>
+
+                <div class="filters__sections">
+
+                    <!--============== ABOUT==================== -->
+                    <div class="about_content no" id="about">
+                       
+                        <p style="align-items: center;">
+                            <code>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </code> Looking for a challenging role in a reputable organization to utilize my technical and management skills for the growth of the organization as well as to enhance my knowledge about new and emerging trends .</p>
+                          
+                        <h1>Achievements & Certifications</h1>
+
+
+                        <div  class="container">
+                            <div style="justify-content: center;"  class="photo-gallery">
+
+                               <div class="column">
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px;" src="assets/img/arrowgreen.png" alt="">
+                                 </div>
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px;" src="assets/img/networking.png" alt="">
+                                 </div>
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px;" src="assets/img/datastructures.png" alt="">
+                                 </div>
+                               </div>
+
+
+                               <div class="column">
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px;" src="assets/img/python.png" alt="">
+                                 </div>
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px;" src="assets/img/ineuron.png" alt="">
+                                 </div>
+                                
+                                 
+                               </div>
+
+
+                               <div class="column">
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px; " src="assets/img/infosys.png" alt="">
+                                 </div>
+                                
+                                 <div class="photo">
+                                    <img style="border: 1px solid black; padding: 10px;"   src="assets/img/java.jpg" alt="">
+                                 </div>
+                                 <a href="https://drive.google.com/drive/folders/11DTvYX037LVXvHGHqQmYnK3D2NsgIx76?usp=sharing" target="_blank" class="viewmorebtn" >
+                                    View More !!
+                                  </a>
+                               </div>
+
+                               
+                            </div>
+                        </div>
+
+                    </div> 
+
+                    
+                       
+                </div>
+
+
+
+                    <!--=============== PROJECTS ===============-->
+                    <div class="projects__content grid filters__active" data-content id="projects">
+
+
+
+                        <article class="projects__card">
+                            <img src="assets/img/newsreader.webp" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web Application</span>
+                                    <h3 class="projects__title">News Reader Application</h3>
+                                    
+                                    <a href="https://github.com/Anish-Anish/NEWS_Application" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>  <h6>NODE.JS | EXPRESS.JS | EJS</h6>
+                                </div>
+                            </div>
+                        </article>
+
+
+
+                        <article class="projects__card">
+                            <img src="assets/img/usrmgmt.jpeg" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Full Stack</span>
+                                    <h3 class="projects__title">User management System</h3>
+                                    <a href="https://github.com/Anish-Anish/User-Managment-System" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>   <h6>Java | MYSQL | Appace Server</h6>
+                                </div>
+                            </div>
+                        </article>
+
+                       
+                         <article class="projects__card">
+                            <img src="assets/img/imdb.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web Application</span>
+                                    <h3 class="projects__title">Movie Analyzer Application</h3>
+                                    <a href="https://github.com/Anish-Anish/Movie-Analyzer/tree/main/moviegit/NodeJs-Movie-Search-master" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>   <h6>NODE.JS | EXPRESS.JS | EJS</h6>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/loginsystem.webp" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web Application</span>
+                                    <h3 class="projects__title">Login System Using Database</h3>
+                                    <a href="https://github.com/Anish-Anish/Login-System" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>   <h6>NODE.JS | EXPRESS.JS | MYSQL </h6>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="projects__card">
+                            <img src="assets/img/bookreservation.avif" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Full Stack</span>
+                                    <h3 class="projects__title">Book Reservation System</h3>
+                                    <a href="https://github.com/Anish-Anish/BookRegistrationSystem" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>   <h6>Java | MYSQL | Appace Server</h6>
+                                </div>
+                            </div>
+                        </article>
+
+
+                        <article class="projects__card">
+                            <img src="assets/img/speechline.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web Application</span>
+                                    <h3 class="projects__title">Text-Speech</h3>
+                                    <a href="https://anish-text2speech.netlify.app/" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>  <h6>Html | Css | Js</h6> 
+                                </div>
+                            </div>
+                        </article>
+
+
+                       
+
+                        <article class="projects__card">
+                           
+                            <img id="resize" src="assets/img/portfolio1.jpg" alt="" class="projects__img">
+
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web Application</span>
+                                    <h3 class="projects__title">Portfolio Website</h3>
+                                    <a href="#" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>  <h6>Html | Css | Js</h6>
+                                </div>
+                            </div>
+                        </article>
+
+                        
+
+                        
+
+                        
+
+                        <article class="projects__card">
+                            <img src="assets/img/weatherapk.png" alt="" class="projects__img">
+                            <div class="projects__modal">
+                                <div>
+                                    <span class="projects__subtitle">Web Application</span>
+                                    <h3 class="projects__title">Weather Web Application</h3>
+                                    <a href="https://anish-anish.github.io/WeatherApp/" class="projects__button button button__small">
+                                        <i class="ri-link"></i>
+                                    </a>   <h6>HTML | CSS | JS | API</h6>
+                                </div>
+                            </div>
+                        </article>
+
+
+                      
+
+
+
+                       
+                        
+
+                        <a href="https://github.com/Anish-Anish" target="_blank" class="viewmorebtn" >
+                            View More !!
+                          </a>
+
+                    </div>
+
+
+                    <!--=============== SKILLS ===============-->
+                    <div class="skills__content grid no " data-content id="skills" >
+                        <div class="divcenter">
+                            <div class="skills__area">
+                                <div class="container_centre" >
+                                  <!-- <h3 class="skills__title">Skills </h3> -->
+          
+                                        <div class="skills__box">
+                                            <div class="skills__group">
+                                                <div class="skills__data">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                
+                                                    <div>
+                                                        <h3 class="skills__name">Java SE</h3>
+                                                        <span class="skills__level">Advanced</span>
+                                                    </div>
+                                                </div>
+                
+                                                <div class="skills__data">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                
+                                                    <div>
+                                                        <h3 class="skills__name">MY-SQL</h3>
+                                                        <span class="skills__level">Intermediate</span>
+                                                    </div>
+                                                </div>
+
+
+                                               
+
+                                                <div class="skills__data">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                
+                                                    <div>
+                                                        <h3 class="skills__name">Node.js</h3>
+                                                        <span class="skills__level">Intermediate</span>
+                                                    </div>
+                                                </div>
+
+                                                <div class="skills__data">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                
+                                                    <div>
+                                                        <h3 class="skills__name">Express.js</h3>
+                                                        <span class="skills__level">Intermediate</span>
+                                                    </div>
+                                                </div>
+
+
+                                                <div class="skills__data">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                
+                                                    <div>
+                                                        <h3 class="skills__name">Html</h3>
+                                                        <span class="skills__level">Intermediate</span>
+                                                    </div>
+                                                </div>
+
+
+
+                                                <div class="skills__data">
+                                                    <i class="ri-checkbox-circle-line"></i>
+                
+                                                    <div>
+                                                        <h3 class="skills__name">CSS</h3>
+                                                        <span class="skills__level">Intermediate</span>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        
+
+                                            
+                                </div>
+
+
+                                        
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+            </section>
+        </main>
+
+
+  
+
+      
+
+        <!--=============== SCROLLREVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
+
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+
+        
+    </body>
 </html>
-
